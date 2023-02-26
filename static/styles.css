@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Phudu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+/* Size for brand */
+nav .navbar-brand {
+    font-size: xx-large;
+    font-family: 'Phudu', cursive;
+}
+nav .short-description {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    color: #6B9080;
+    font-style: italic;
+    display: none;
+}
+
+.navbar-brand .color {
+    color: #6B9080;
+}
+
+.nav-item {
+    font-size: small;
+    text-align: center;
+}
+
+.navbar-nav>.nav-item:hover {
+    text-decoration: underline;
+    text-decoration-color: #CCE3DE;
+}
+
+.homepage-text {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(/static/alannah-yip.jpg);
+    background-repeat: no-repeat;
+    color: #F6FFF8;
+    padding: 25px;
+    height: 600px;
+}
+
+.text-in-homepage{
+    color: #CCE3DE;
+}
+
+.text-in-homepage h1{
+    font-size: 27px;
+    font-weight: bold;
+}
+.text-in-homepage h3{
+    font-size: 15px;
+}
+.about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #CCE3DE;
+}
+.about h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn{
+    background-color: #A4C3B2;
+    border: none;
+    margin: 10px;
+
+}
+.btn:hover {
+    background-color: #EAF4F4;
+    color: #6B9080;
+}
+.about-text {
+    background-image: url("https://www.wucsportclimbing2022.at/fileadmin/_processed_/5/2/csm_AA_IFSCWCIbk21_AA1_0606_header_92edbe764a.jpg");
+    background-repeat: no-repeat;
+    color: #F6FFF8;
+    padding: 15px;
+}
+.text-in-about p{
+    font-size: 13px;
+}
+form{
+    text-align: center;
+    padding-top: 30px;
+}
+.hmpg-btns{
+    float:left;
+    margin-top: -25px;
+}
+/* Tablet */
+@media all and (min-width: 600px) {
+    .text-in-homepage h1{
+        font-size: 45px;
+    }
+    .text-in-homepage h3{
+        font-size: 20px;
+    }
+    .about {
+        top: 50%;
+        left: 65%;
+    }
+    .about h1 {
+        font-size: 35px;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 960px) {
+    .text-in-homepage h1{
+        font-size: 75px;
+    }
+    .text-in-homepage h3{
+        font-size: 25px;
+    }
+    nav .short-description {
+        display: initial;
+    }
+    .medium-title{
+        font-size: 45px;
+    }
+    .about {
+        top: 50%;
+        left: 57%;
+        width: 500px
+    }
+    .about h1 {
+        font-size: 55px;
+    }
+    .text-in-about {
+        width: 800px;
+        padding: 30px;
+        padding-left: 40px;
+        padding-top: 60px;
+    }
+    .text-in-about p {
+        font-size: 15px;
+    }
+    .text-in-about h1{
+
+    }
+}
+
+/* BIG Desktop */
+@media all and (min-width: 1600px) {
+    .text-in-homepage h1{
+        font-size: 75px;
+    }
+    nav .short-description {
+        display: initial;
+    }
+    .about {
+        top: 50%;
+        left: 65%;
+    }
+
+}

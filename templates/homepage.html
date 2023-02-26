@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Homepage
+{% endblock %}
+
+{% block main %}
+    <section>
+        <div class="homepage-text">
+            <div class="text-in-homepage">
+                <h1>Reach new heights.</h1>
+                <h3><i>Method Climbing</i> is the training app built to help you achieve your most ambitious climbing goals.</h3>
+                <form class="hmpg-btns" action="/homepage" method="post">
+                    <button class="btn btn-primary" name="action" value="new" type="submit">New to training? Start here.</button>
+                    <button class="btn btn-primary" name="action" value="account_holder" type="submit">Already have an account? Get training now.</button>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}
